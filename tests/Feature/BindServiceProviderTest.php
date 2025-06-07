@@ -44,7 +44,7 @@ it('sets discovery paths', function () {
 it('disables discovery', function () {
     BindServiceProvider::disableBinderDiscovery();
 
-    /** @var \Honed\Bind\BindServiceProvider $provider */
+    /** @var BindServiceProvider $provider */
     $provider = App::getProvider(BindServiceProvider::class);
 
     expect($provider->shouldDiscoverBinders())

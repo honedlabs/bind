@@ -33,9 +33,7 @@ it('gets class name from attribute', function () {
         ->toBe(User::class);
 });
 
-it('guesses model name', function () {
-
-})->skip();
+it('guesses model name', function () {})->skip();
 
 it('uses custom namespace', function () {
     Binder::useNamespace('App\\Binders\\');
@@ -44,18 +42,10 @@ it('uses custom namespace', function () {
         ->toBeInstanceOf(UserBinder::class);
 });
 
-it('resolves binding', function () {
+it('resolves binding', function () {});
 
-});
+it('resolves binding query', function () {});
 
-it('resolves binding query', function () {
+it('gets model name from property', function () {});
 
-});
-
-it('gets model name from property', function () {
-
-});
-
-it('gets model name from resolver', function () {
-    
-});
+it('gets model name from resolver', function () {});
