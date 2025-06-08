@@ -88,7 +88,7 @@ class DiscoverBinders
             return call_user_func(static::$guessClassNamesUsingCallback, $file, $basePath);
         }
 
-        $class = trim(Str::replaceFirst($basePath, '', $file->getRealPath()), DIRECTORY_SEPARATOR);
+        $class = mb_trim(Str::replaceFirst($basePath, '', $file->getRealPath()), DIRECTORY_SEPARATOR);
 
         return ucfirst(Str::camel(str_replace(
             [DIRECTORY_SEPARATOR, ucfirst(basename(App::path())).'\\'],
