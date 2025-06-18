@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Honed\Bind\Commands;
 
-use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
-use Symfony\Component\Console\Attribute\AsCommand;
+use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand(name: 'make:binder')]
 class BinderMakeCommand extends GeneratorCommand
